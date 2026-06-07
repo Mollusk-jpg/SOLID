@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ldo/solid": "^1.0.0-alpha.1",
+    "@ldo/solid-react": "^1.0.0-alpha.51",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
