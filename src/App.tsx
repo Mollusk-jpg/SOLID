@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import { Header } from './Header.tsx';
-import { Blog } from './Blog.tsx';
+import React from 'react';
+import type { FunctionComponent } from 'react';
+import { Header } from './Header';
+import { Blog } from './Blog';
 import { BrowserSolidLdoProvider } from '@ldo/solid-react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: FunctionComponent = () => {
   return (
-    <>
     <div className="App">
       <BrowserSolidLdoProvider>
         <Header />
         <Blog />
       </BrowserSolidLdoProvider>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
